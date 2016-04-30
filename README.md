@@ -3,6 +3,8 @@ Addition to Akka HTTP which provides (un)marshalling via Jackson library
 
 # Usage
 ```scala
+import nz.mkokho.akkahttpjackson.JacksonJsonSupport
+
 object MarshallingServer extends JacksonJsonSupport {
   val jacksonObjectMapper = new ObjectMapper()
   //Jackson scala module is required for case classes
