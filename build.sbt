@@ -1,6 +1,6 @@
 name := "akka-http-jackson-support"
 
-version := "1.0.0"
+version := "1.0.0-SNAPSHOT"
 
 scalaVersion := "2.11.8"
 
@@ -11,3 +11,7 @@ libraryDependencies ++= Seq(
 
   "org.scalatest" %% "scalatest" % "2.2.6" % "test"
 )
+
+publishTo := Some("Bintray" at "https://dl.bintray.com/mkokho/maven")
+
+credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
